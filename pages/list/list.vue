@@ -61,7 +61,8 @@
 
 <script>
 	import musichead from '../../components/musichead/musichead.vue'
-	import { list } from '../../common/api.js'
+	import { playlistDetail } from '@/common/api.js'
+	// import { list } from '../../common/api.js'
 	import '../../common/iconfont.css'
 	export default {
 		data() {
@@ -80,7 +81,7 @@
 		},
 		onLoad(options){
 			let listId = options.listId;
-			list(listId).then((res)=>{
+			playlistDetail(listId).then((res)=>{
 				if(res[1].data.code == '200'){
 					this.playlist = res[1].data.playlist;
 					this.privileges = res[1].data.privileges;

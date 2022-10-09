@@ -31,7 +31,7 @@
 							<view>1.与我无关 - 啊冗</view>
 						</view>
 					</view> -->
-					<view class="index-list-item" v-for="(item,index) in topList" :key="index" @tap="handleToList(item.listId)">
+					<view class="index-list-item" v-for="(item,index) in topList" :key="index" @tap="handleToList(item.id)">
 						<view class="index-list-img">
 							<image :src="item.coverImgUrl" mode=""></image>
 							<text>{{ item.updateFrequency }}</text>
