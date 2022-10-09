@@ -1,7 +1,7 @@
 {
     "name" : "neteaseMusic",
-    "appid" : "",
-    "description" : "",
+    "appid" : "__UNI__045D57D",
+    "description" : "我的网易云",
     "versionName" : "1.0.0",
     "versionCode" : "100",
     "transformPx" : false,
@@ -57,7 +57,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wx8680da0abbd83342",
+        "appid" : "wx3e1bf1a1396406b5",
         "setting" : {
             "urlCheck" : false,
             "es6" : true,
@@ -65,7 +65,7 @@
             "minified" : true
         },
         "usingComponents" : true,
-		"requiredBackgroundModes" : ["audio"]
+        "requiredBackgroundModes" : [ "audio" ]
     },
     "mp-alipay" : {
         "usingComponents" : true
@@ -75,5 +75,6 @@
     },
     "mp-toutiao" : {
         "usingComponents" : true
-    }
+    },
+    "locale" : "zh-Hans"
 }
